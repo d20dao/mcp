@@ -1,0 +1,61 @@
+{
+  "name": "@d20dao/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for D20DAO verifiable randomness on Arc: dice, draws and shuffles with on-chain proofs, 0.05 USDC per call from a Circle Agent Wallet.",
+  "mcpName": "org.d20dao/vrf",
+  "type": "module",
+  "bin": {
+    "d20dao-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.18.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d20dao/mcp.git"
+  },
+  "homepage": "https://d20dao.org/docs/agents",
+  "bugs": {
+    "url": "https://github.com/d20dao/mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "vrf",
+    "verifiable-randomness",
+    "randomness",
+    "dice",
+    "raffle",
+    "x402",
+    "usdc",
+    "circle",
+    "arc",
+    "d20dao"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "@noble/hashes": "2.4.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.2",
+    "typescript": "7.0.2",
+    "vitest": "5.0.1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "data": {
+    "response": {
+      "status": "fulfilled",
+      "requestId": "23",
+      "operation": "dice",
+      "result": [
+        3,
+        3
+      ],
+      "randomness": "0x4b44973c4961d3e6618d3a05ff9c9f21a871702ef31e9a61c8c1911619705cd3",
+      "clientSeed": "0xa4b6e63a981e4134bea937a3b9f15dd50a30b52d8fb84d9949cbd7731aea350b",
+      "paymentId": "0x61d30343392803d4e1dcafe33153a37611e7fe414bfd22ddaf1fb5ea495ce9aa",
+      "ref": "0xa4b6e63a981e4134bea937a3b9f15dd50a30b52d8fb84d9949cbd7731aea350b",
+      "seed": "mcp-test-1",
+      "mapping": {
+        "operation": 1,
+        "lower": "0",
+        "upper": "20",
+        "count": 2,
+        "population": 0
+      },
+      "network": "arc-mainnet",
+      "chainId": 5042,
+      "coordinator": "0xd20da057469C45928912d983F45790C41e290571",
+      "consumer": "0x2B76ACaFe480A554D07291ccE75656A369707E8D",
+      "requestTx": "0x5ba22ebdace5257dc33f14ab3c5ac6301ec2e74ec238169984dd3da0321cdac2",
+      "fulfillmentTx": "0x3d26a90343c443cd671f32b9950428a14242eb256c74023ce85f63df1733854c",
+      "deadline": 1789848808,
+      "links": {
+        "result": "https://api.d20dao.org/v1/random/23",
+        "status": "https://api.d20dao.org/v1/payments/0x61d30343392803d4e1dcafe33153a37611e7fe414bfd22ddaf1fb5ea495ce9aa",
+        "request": "https://explorer.arc.io/tx/0x5ba22ebdace5257dc33f14ab3c5ac6301ec2e74ec238169984dd3da0321cdac2",
+        "fulfillment": "https://explorer.arc.io/tx/0x3d26a90343c443cd671f32b9950428a14242eb256c74023ce85f63df1733854c",
+        "proof": "https://d20dao.org/explorer/request/5042/0xd20da057469C45928912d983F45790C41e290571/23"
+      },
+      "payment": {
+        "network": "eip155:5042",
+        "payer": "0x1111111111111111111111111111111111111111",
+        "amount": "50000",
+        "settlement": "d3123795-878e-4d66-9b7a-c54797bc589a"
+      },
+      "verify": "clientSeed = keccak256(abi.encode(bytes32 paymentId, string seed)) with paymentId = keccak256(abi.encode(uint256 chainId, address payer, bytes32 nonce)) of your payment; a replacement request (opened when the first expires unserved) uses keccak256(abi.encode(bytes32 ref, uint256 1)). The coordinator's getMappedResult(requestId) returns result; replayCoordinator in @d20dao/vrf-sdk re-derives randomness from the proof. See https://d20dao.org/docs/verification."
+    },
+    "payment": {
+      "amount": "$0.05 USDC",
+      "chain": "eip155:5042",
+      "scheme": "GatewayWalletBatched",
+      "seller": "0x7C9a886c485a33a9636A685c867EaFBD15515e86",
+      "receipt": "eyJzdWNjZXNzIjp0cnVlLCJ0cmFuc2FjdGlvbiI6ImQzMTIzNzk1LTg3OGUtNGQ2Ni05YjdhLWM1NDc5N2JjNTg5YSIsIm5ldHdvcmsiOiJlaXAxNTU6NTA0MiIsInBheWVyIjoiMHgxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExIn0="
+    }
+  }
+}

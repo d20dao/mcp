@@ -1,0 +1,60 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "org.d20dao/vrf",
+  "title": "D20DAO Verifiable Randomness",
+  "description": "Verifiable dice, draws and shuffles with on-chain VRF proofs on Arc. 0.05 USDC per draw.",
+  "version": "0.1.0",
+  "websiteUrl": "https://d20dao.org/docs/agents",
+  "repository": {
+    "url": "https://github.com/d20dao/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@d20dao/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "D20_DAILY_LIMIT_USDC",
+          "description": "Spending cap per UTC day in USDC (default 1; 0 turns paid draws off).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "D20_NETWORK",
+          "description": "mainnet (default) or testnet.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "D20_PAY_CHAIN",
+          "description": "Circle CLI chain code to pay from, such as ARC or BASE (default: first funded).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "D20_WALLET_ADDRESS",
+          "description": "Agent wallet to pay from (default: the first one the Circle CLI lists).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "D20_CIRCLE_CLI",
+          "description": "Path to the Circle CLI's dist/index.js (default: circle on PATH).",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "D20_MCP_HOME",
+          "description": "Folder for the daily spending record (default ~/.d20dao-mcp).",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
