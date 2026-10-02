@@ -58,7 +58,7 @@ A draw usually answers in about ten seconds, but it can take longer. If your cli
 
 ## Verify
 
-Every result links its request and fulfillment transactions and a proof page. Replay the proof yourself with [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk); see [verification](https://d20dao.org/docs/verification) and the [agent API guide](https://d20dao.org/docs/agents).
+Every result links its request and fulfillment transactions and a proof page. Replay the proof yourself with [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.5.0 or later; see [verification](https://d20dao.org/docs/verification) and the [agent API guide](https://d20dao.org/docs/agents).
 
 ## License
 
