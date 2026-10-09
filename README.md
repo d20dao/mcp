@@ -2,7 +2,7 @@
 
 Verifiable randomness for AI agents: dice, coin flips, ranges, winners and shuffles, each one a VRF request on Arc with a proof anyone can replay. 0.05 USDC per draw, paid from your Circle Agent Wallet.
 
-Draws run on Arc through the D20DAO x402 API. D20DAO also runs on Robinhood Chain, where there is no x402 API: a contract there requests randomness directly on chain, using [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.1 and its [integration guide](https://github.com/d20dao/d20-sdk#robinhood-chain).
+Draws run on Arc through the D20DAO x402 API. D20DAO also runs on Robinhood Chain, where there is no x402 API: a contract there requests randomness directly on chain, using [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.2 and its [integration guide](https://github.com/d20dao/d20-sdk#robinhood-chain).
 
 ## Setup
 
@@ -60,7 +60,7 @@ A draw usually answers in about ten seconds, but it can take longer. If your cli
 
 ## Verify
 
-Every result links its request and fulfillment transactions and a proof page. Replay the proof yourself with [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.0 or later; see [verification](https://d20dao.org/docs/verification) and the [agent API guide](https://d20dao.org/docs/agents).
+Every result links its request and fulfillment transactions and a proof page. Replay the proof yourself with [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.2 or later; see [verification](https://d20dao.org/docs/verification) and the [agent API guide](https://d20dao.org/docs/agents).
 
 ## License
 
