@@ -26,7 +26,7 @@
         },
         {
           "name": "D20_NETWORK",
-          "description": "mainnet (default) or testnet.",
+          "description": "Arc Mainnet (default) or Arc Testnet.",
           "isRequired": false,
           "isSecret": false
         },
