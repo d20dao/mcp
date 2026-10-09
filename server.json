@@ -3,7 +3,7 @@
   "name": "org.d20dao/vrf",
   "title": "D20DAO Verifiable Randomness",
   "description": "Verifiable VRF draws on Arc, 0.05 USDC each. On Robinhood Chain, integrate on chain with the SDK.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://d20dao.org/docs/agents",
   "repository": {
     "url": "https://github.com/d20dao/mcp",
@@ -13,7 +13,7 @@
     {
       "registryType": "npm",
       "identifier": "@d20dao/mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       },

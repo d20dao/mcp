@@ -2,7 +2,7 @@
 
 Verifiable randomness for AI agents: dice, coin flips, ranges, winners and shuffles, each one a VRF request on Arc with a proof anyone can replay. 0.05 USDC per draw, paid from your Circle Agent Wallet.
 
-Draws run on Arc through the D20DAO x402 API. D20DAO also runs on Robinhood Chain, where there is no x402 API: a contract there requests randomness directly on chain, using [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.0 and its [integration guide](https://github.com/d20dao/d20-sdk#robinhood-chain).
+Draws run on Arc through the D20DAO x402 API. D20DAO also runs on Robinhood Chain, where there is no x402 API: a contract there requests randomness directly on chain, using [`@d20dao/vrf-sdk`](https://www.npmjs.com/package/@d20dao/vrf-sdk) 0.6.1 and its [integration guide](https://github.com/d20dao/d20-sdk#robinhood-chain).
 
 ## Setup
 
@@ -16,13 +16,13 @@ Draws run on Arc through the D20DAO x402 API. D20DAO also runs on Robinhood Chai
 
    Claude Code:
    ```bash
-   claude mcp add d20dao -- npx -y @d20dao/mcp@0.1.1
+   claude mcp add d20dao -- npx -y @d20dao/mcp@0.1.2
    ```
    Claude Desktop, Cursor and others (`mcpServers` in the client's MCP config):
    ```json
-   { "mcpServers": { "d20dao": { "command": "npx", "args": ["-y", "@d20dao/mcp@0.1.1"] } } }
+   { "mcpServers": { "d20dao": { "command": "npx", "args": ["-y", "@d20dao/mcp@0.1.2"] } } }
    ```
-   On Windows, use `"command": "cmd"` with `"args": ["/c", "npx", "-y", "@d20dao/mcp@0.1.1"]` if the client cannot start `npx` directly. Pin the version, since the server runs with your Circle session.
+   On Windows, use `"command": "cmd"` with `"args": ["/c", "npx", "-y", "@d20dao/mcp@0.1.2"]` if the client cannot start `npx` directly. Pin the version, since the server runs with your Circle session.
 
 Ask your agent to call `setup_status`; it names the next step until everything is ready.
 

@@ -1,6 +1,6 @@
 {
   "name": "@d20dao/mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for D20DAO verifiable randomness on Arc: dice, draws and shuffles with on-chain proofs, 0.05 USDC per call from a Circle Agent Wallet.",
   "mcpName": "org.d20dao/vrf",
   "type": "module",
